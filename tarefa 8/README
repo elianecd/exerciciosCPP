@@ -1,0 +1,38 @@
+File: ex8a.cc
+Simple recursions
+========================================
+Writen by: Eliane Dahab
+
+This program does simple recursion operations from a simple array:
+
+1. Enters values from the user into the array;
+2. Sums all the values of the array and shows the result of the sum;
+3. Bubble sort the array to put all the values in a crescent order;
+4. Searches inside the array for the wanted number that the user enters,
+   but first the array must be bubbled sorted, if it not, will print "Error",
+   and then will "1" if the number is found or "0" if it is not;
+5. Checks whether the array is an arithmetic progression;
+6. Shows the values of the array from beginning to the end;
+7. Shows the values of the array from end to the beginning;
+8. Starting from the third cell, the program checks if the current cell
+   represents the sum of the values of the 2 cells before him.
+   The program will print "1" if the cell is the sum of the 2 cells before him,
+   or will print "0" if the cell is not the sum;
+9. Checks if the array is palindrome;
+10. Counts how many series are in the array, crescent and decrescent order;
+11. Finds the maximum value of the sub-array.
+    The user enters the number of the first and last cell of the sub-array.
+12. Shows the prime numbers found in the array according to the order of the array;
+13. Closes the program.
+    The size of the array is up to 10 cells.
+
+Compile: g++ -Wall ex8a.cc –o ex8a
+Run: ex8a
+Input: 1 //To order the program to fill the array with the input
+An array;
+The number that represents the selected operation.
+e.g. 1
+5 7 2 3 9 2 1 7 5 6
+3 //the selected operation
+
+Output: 1 2 2 3 5 5 6 7 7 9 //The array bubbled sorted

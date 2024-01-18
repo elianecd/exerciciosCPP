@@ -1,0 +1,43 @@
+File: ex2a.cc
+Obtaining the result of how many numbers are even, odd, positive,zero and negative
+========================================
+Writen by: Eliane Dahab
+
+This program identifies the numbers according to their classification.
+
+Compile: g++ -Wall ex2a.cc –o ex2a
+Run: ex2a
+Input: Four random numbers for the identification of how many of them are even, odd, positive, zero and negative
+e.g. 45 60 -23 0 for the identification of even, odd, positive, zero and negative
+
+Output: 2 2
+2 1 1
+Meaning that 2 numbers are even including zero as even, 2 number are odd, 2 number are positive, there is one zero and one negative number.
+
+File: ex2b.cc
+Getting the greater value between 3 number with sum and multiplication operations
+========================================
+Writen by: Eliane Dahab, id = 338038839, login = elianech
+
+This program obtain the maximum result between 3 numbers with sum and multiplication operations.
+
+Compile: g++ -Wall ex2b.cc –o ex2b
+Run: ex2b
+Input: Three random numbers for the operations of sum and multiplication
+e.g., 9 12 -3
+
+Output: 12 \* 9 + (-3) = 105
+
+File: ex2c.cc
+Getting the date in numbers and putting in words
+========================================
+Writen by: Eliane Dahab, id = 338038839, login = elianech
+
+This program convert any date puted in number to words
+
+Compile: g++ -Wall ex2c.cc –o ex2c
+Run: ex2c
+Input: Any date in numbers
+e.g., 18 6 1989
+
+Output: 18th June 1989

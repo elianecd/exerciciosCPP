@@ -1,0 +1,105 @@
+File: ex7a.cc
+Removing from the string
+========================================
+Writen by: Eliane Dahab
+
+This program receives 2 strings for the following operations:
+First identifies whether the first string contains:
+
+- Letter in lower case, so it converts to upper case;
+- Character that are not letters, it removes them.
+  After that, the program compare the 2 strings.
+  The comparison is to check similar characters between them.
+  If both strings contain the same characters,
+  the program will print the characters that are not in common between them.
+
+Compile: g++ -Wall ex7a.cc –o ex7a
+Run: ex7a
+Input: 2 strings
+e.g. aAc1bBf!
+b!
+
+Output: AACBBF //Lower case letters became upper and removed what isn't letter.
+aAc1Bf //Printed what is not in common between the 2 strings.
+
+File: ex7b.cc
+Encryption
+========================================
+Writen by: Eliane Dahab, id = 338038839, login = elianech
+
+This program has 2 processes: encode and decode.
+
+The first process (encode) identifies a string and does the following steps:
+
+- Every letter jumps n letters in the ASCII table.
+  Means that if n is 3, the letter X will become A for example.
+  Does not matter whether the letter is upper or lower case.
+  What is not letter, do not suffer any modification.
+- After that, the modified string suffers a mirror process.
+  Means that the first letter will swap with the last letter and so on.
+  For example: abcde will become edcba.
+- And then, add a random letter between the string according to n jumps.
+  Means that after n characters, a random letter is added.
+- For last, add the value of n in the end of the string.
+
+The second process (decode) is the reverse process.
+Means that receives a string after that suffered a encode process.
+And decode the string.
+The last character of the string is the n jumps.
+
+- So the program identifies the n.
+- Remove the random letter added between the string according to n jumps.
+- Does the mirror process to reverse.
+- Jump back n times in the ASCII table.
+
+The n jumps is in between 2 to 4, means that the maximum of jumps possible is 3.
+
+Compile: g++ -Wall ex7b.cc –o ex7b
+Run: ex7b
+Input: A string
+e.g. 1 Hi, how are you?
+
+            First is necessary to define which process the program need to do:
+            1 means encode process;
+            2 means decode process.
+
+Output: Kl, krz duh brx? //Here the letters jumped n times in ASCII table.
+,lKrk d z huxrb? //Here suffered the mirror process according to n.
+,lKprk pd zp hupxrbp?3 //Here was add the 'p' between the string,
+according to n jumps and was add the value of n in the end.
+
+File: ex7c.cc
+Checking valid password
+========================================
+Writen by: Eliane Dahab, id = 338038839, login = elianech
+
+This program verifies which password is valid.
+Means, which password contains the requirement that is asked to have.
+So, first the input will be the number of password's possibilities.
+And then, following will come the possibilities of password (per line).
+After, also as input, the program receives the number of requirements.
+And then, following will come the requirements (per line).
+A password is valid if contains at least one character of each requirements.
+
+Compile: g++ -Wall ex7c.cc –o ex7c
+Run: ex7c
+Input: Passwords and requirements
+e.g., 3 //Represents the number of password's possibilities
+Aba_Even //This is the first option as password.
+1234567 //Second option.
+Yosi_Cohen17? //Third option.
+4 //Represents the number of requirement
+0123456789 //First requirement.
+abcde //Second requirement.
+ABCDE //Third requirement.
+?! //Fourth requirement.
+
+Output: Yosi_Cohen17? //Is a valid password that contains all the requirements.
+
+The Runtime of the check_valid_password function is:
+Good case: size_inp_passwd runs just one time through check_one_password.
+The check_one_password function runs input*check times, means that it depends
+on the size of the arrays.
+Worst case: check_valid_password function will run
+[size_inp_passwd*size_mandatory] \* check_one_password.
+Means, the check_one_password went through all the characters of the arrays.

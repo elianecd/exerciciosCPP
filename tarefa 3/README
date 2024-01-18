@@ -1,0 +1,54 @@
+File: ex3a.cc
+Counting the amount of numbers from a serie until zero
+========================================
+Writen by: Eliane Dahab
+
+This program calculates from a serie the amount of numbers, their average, the amount of positive and negative numbers.
+The moment that the program identifies the zero in the serie, he will stop running and calculates all the aspects of all the numbers before him.
+The average is made by the sum of all numbers (until zero) and divided by their amount.
+
+Compile: g++ -Wall ex3a.cc –o ex3a
+Run: ex3a
+Input: A serie of numbers with zero
+e.g. 5 -9 12 76 -54 0 23 14 for the program to count all the numbers until zero
+
+Output: 5 6 This first line shows the amount of all numbers before zero and their average.
+3 2 This second line shows the quantity of positive and negative numbers until zero.
+
+File: ex3b.cc
+Calculating the pair of numbers from 1 to 1000
+========================================
+Writen by: Eliane Dahab, id = 338038839, login = elianech
+
+This program verifies which pair of numbers from 1 to 1000 that the sum of two squared numbers is equal to a third power of any number.
+And the sum of those two numbers in the third power each, is equal to a square of any number.
+In other words, x^2 + y^2 = num1^3 AND x^3 + y^3 = num2^2.
+
+Compile: g++ -Wall ex3b.cc –o ex3b
+Run: ex3b
+Input: None
+
+Output: 2 2
+128 128
+
+File: ex3c.cc
+Verifying the ID number
+========================================
+Writen by: Eliane Dahab, id = 338038839, login = elianech
+
+This program verifies whether an ID number is valid or not.
+
+Compile: g++ -Wall ex3c.cc –o ex3c
+Run: ex3c
+Input: ID number
+e.g., 3862877 for the following calculations:
+
+        First is to calculate the amount of the digits of an ID number, it must have the minimum of 6 digits and maximum of 9.
+
+        Second is to multiply by 2 the digits that are in even positions and if the result got 2 digits, need to sum those 2 digits.
+
+        The next is to sum all the digits and then it must be divided by 10 without rest to be considered as a valid ID number.
+
+        If the ID number is wrong or does not fit the permitted digits, the program will print 0.
+
+Output: 1

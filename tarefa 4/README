@@ -1,0 +1,56 @@
+File: ex4a.cc
+Counting from an array how many cells is divided by the cell before him
+========================================
+Writen by: Eliane Dahab
+
+This program calculates from an array which cell is divisible by the cell before him and also divides the cell after him.
+And then counts how many cells that matches those conditions.
+The divisions are done through the values of the respective cells and there can be no remainder.
+
+Compile: g++ -Wall ex4a.cc –o ex4a
+Run: ex4a
+Input: An array of 6 numbers
+e.g. 3 5 10 20 51 73
+
+Output: 1 The program counted one because only this cell with value 10 is divisible by 5 and divides 20 without remainder.
+
+File: ex4b.cc
+Identifying the small array inside the big array
+========================================
+Writen by: Eliane Dahab, id = 338038839, login = elianech
+
+This program checks whether the small array is found inside of the big array in his correct order.
+The small array is compound by 3 cells and the big array by 9 cells.
+
+Compile: g++ -Wall ex4b.cc –o ex4b
+Run: ex4b
+Input: The small array
+e.g. 5 9 7
+
+       The big array
+       e.g. 3 4 5 5 9 7 0 4 1
+
+Output: 3 Because is from the cell of position 3 that is found the beginning of the small array inside of the big array.
+
+File: ex4c.cc
+Identifying a loop inside of the array
+========================================
+Writen by: Eliane Dahab, id = 338038839, login = elianech
+
+This program identifies whether there is a loop inside of the array.
+The array is compound by 8 cells.
+The loop happens when the value of a cell points to the position of another cell and so on, until the last cell in the series indicates the first cell of the loop.
+
+Compile: g++ -Wall ex4c.cc –o ex4c
+Run: ex4c
+Input: An array
+e.g., 2 3 5 99 43 7 74 0 for the following calculations:
+
+        The first cell (number 0) points to the cell number 2;
+        The cell number 2 points to the cell number 5;
+        The cell number 5 points to the cell number 7;
+        The cell number 7 points to the cell number 0;
+        The last cell pointed back to the first cell, creating a loop.
+
+
+Output: 0 2 5 7 Represents the positions of the cells that are forming a loop.

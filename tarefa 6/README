@@ -1,0 +1,99 @@
+File: ex6a.cc
+Finding the row and the column with the highest sum of values
+========================================
+Writen by: Eliane Dahab
+
+This program identifies which row and column has the highest sum of values.
+The program sums all the values of each row and each column.
+It compares the results (the sums) of each row with other rows.
+And compare the sums of each column with other columns.
+Display as result the row and the column with the highest sum.
+All the values of the matrix are positive.
+
+Compile: g++ -Wall ex6a.cc –o ex6a
+Run: ex6a
+Input: An matrix of 4 rows and 5 columns
+e.g. 5 8 9 6 7
+2 3 4 1 0
+4 4 2 1 8
+9 7 4 1 3
+Row 0 has the highest sum of all his values comparing to other rows.
+Column 1 has the highest sum of all his values comparing to other columns.
+
+Output: 0 1
+
+File: ex6b.cc
+Identifying equilateral triangles inside a matrix
+========================================
+Writen by: Eliane Dahab, id = 338038839, login = elianech
+
+This program identifies triangles inside a matrix.
+First, identifies whether the sides are equals to the top.
+Then, checks whether there is a base for the sides.
+The checking happens through values, comparing the cells.
+The minimal size of any side of the triangle must be 3.
+The base of the triangle is always horizontal.
+Is possible to find triangles in standing and inverted positions.
+So triangles can share the same base.
+The size of the triangle is counted by the cells of his side.
+Lastly, the program identifies which triangle is the biggest and what his size.
+
+Compile: g++ -Wall ex6b.cc –o ex6b
+Run: ex6b
+Input: A matrix
+e.g. 0 0 0 0 3 0 0 0 0 0 0 13 0 0 0
+9 9 9 9 9 0 0 0 0 0 13 0 13 0 0  
+ 0 9 0 9 0 13 13 13 13 13 13 13 13 13 0
+9 0 9 0 9 0 13 0 0 0 0 0 13 0 1  
+ 0 9 0 9 0 0 17 13 0 0 0 13 0 0 1
+9 9 9 9 9 17 0 17 13 0 13 0 0 0 2
+0 0 0 0 17 3 0 0 17 13 0 0 5 0 1
+2 0 0 17 0 0 0 0 0 17 0 3 1 0 1  
+ 0 0 17 17 17 17 17 17 17 17 17 0 0 0 1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+
+            The program points to the row of the top of the triangle (his beginning).
+            Then, points the column of the top of the triangle (his beginning).
+            So, counts the size of the triangle.
+            Also identifies whether is standing or inverted triangle.
+            And identifies the value that compounds the triangle.
+            At last, counts the biggest triangles and their size.
+
+Output: 1 2: 3 standing. Value: 13
+3 12: 4 standing. Value: 9
+3 12: 4 inverted. Value: 9
+4 7: 5 standing. Value: 13
+6 4: 5 inverted. Value: 17
+2 5
+
+This program first runs on readInput function through all the ROWS and COLS.
+This means ROW*COL times.
+Then, in every While loop, the programs runs again ROW*COL times,
+but in an extreme case will run ROW\*COL(ROW + COL + COL).
+
+File: ex6c.cc
+Common value in the same line
+========================================
+Writen by: Eliane Dahab, id = 338038839, login = elianech
+
+This program identifies in each row the number that most appears.
+The program will print the common value in a line if the same number,
+does not appear a larger number of times in any other line.
+
+Compile: g++ -Wall ex6c.cc –o ex6c
+Run: ex6c
+Input: An array
+e.g., 17 17 5 4 3 2 1
+9 9 9 9 17 17 17
+9 9 9 1 2 3 4
+6 4 5 4 6 6 5
+
+            The program points to the row of the most appeared common number.
+            Then, points to his value.
+            And counts the times that the number appeared in that same line.
+
+Output: 1 9 4
+3 6 3
+
+This program first runs on readInput function through all ROW*COL.
+After, in the second function, runs the same, ROW*COL.

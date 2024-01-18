@@ -1,0 +1,63 @@
+File: ex9a.cc
+The highest of 9 digits that is divided by 11
+========================================
+Writen by: Eliane Dahab
+
+This program prints the highest value of 9 digits that is divided by 11.
+All the digits are different from each other.
+The division leaves no remainder.
+
+Compile: g++ -Wall ex9a.cc –o ex9a
+Run: ex9a
+Input: none
+
+Output: 987652413
+
+File: ex9b.cc
+Pattern matching
+========================================
+Writen by: Eliane Dahab, id = 338038839, login = elianech
+
+This program receives 2 strings from the user.
+Every string is up to 50 characters each.
+The first string is called string and the second string is called pattern.
+The program checks whether the string matches with the pattern.
+The conditions to check the match are:
+
+- For every normal character that is not "\*" or "?" in the pattern
+  fits only if the character is the same in the string;
+- For each "?" character in the pattern, matches for each individual
+  character in the string;
+- For the "\*" character in the pattern, may matches zero or more characters
+  in the string.
+  In the end, the program will print 1 if the 2 strings match or 0 for no match.
+
+Compile: g++ -Wall ex9b.cc –o ex9b
+Run: ex9b
+Input: The 2 strings
+e.g. abcd //This the string
+ab?? //This is the pattern
+
+Output: 1
+
+File: ex9c.cc
+Gold bars
+========================================
+Writen by: Eliane Dahab, id = 338038839, login = elianech
+
+This program receives from the user an array of 5 numbers.
+Every number of the array represents the weigh of each gold bars.
+So the program divides the 5 gold bars equally between 2 goldsmiths.
+Meaning, each of them will get the exactly same weigh of gold in the division.
+If the division won't be equal between the 2 goldsmiths, the program will
+print: "Cannot divide".
+If the division can be equal, will be printed in separated lines what each
+goldsmith will get of the total of the gold bars.
+
+Compile: g++ -Wall ex9c.cc –o ex9c
+Run: ex9c
+Input: The 5 gold bars //The array of 5 numbers
+e.g., 1 1 2 4 2 //The total weigh of the gold bars is 10
+
+Output: 1 2 2 //The first goldsmith gets 3 bars, total weigh is 5.
+1 4 //The second goldsmith gets 2 bars, total weigh is also 5.

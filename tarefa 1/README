@@ -1,0 +1,68 @@
+File: ex1a.cc 
+Solving the difference arithmetic operation
+========================================
+Writen by: Eliane Dahab
+
+This program calculates the difference between numbers.
+
+Compile: g++ -Wall ex1a.cc –o ex1a
+Run: ex1a
+Input: 	Three random numbers for the operation of difference
+        e.g. 35 -18 0 for the operation: 35 - 35, 35 - (-18), 35 - 0
+
+Output: The difference between the first number with the other two numbers.
+
+
+
+
+
+File: ex1b.cc 
+Calculating the area and the perimeter of a triangle
+========================================
+Writen by: Eliane Dahab, id = 338038839, login = elianech
+
+This program solves a square root of the area using the Heron's formula and calculates the perimeter of a triangle
+
+Compile: g++ -Wall ex1b.cc –o ex1b
+Run: ex1b
+Input: The three sides of a triangle
+         e.g., 5 5 5 
+
+         First to calculate the side used in the Heron's formula
+          side = (side1 + side2 + side3) / 2;
+
+         And then calculating the area of the triangle through Heron's formula 
+          area = sqrt (side * (side - side1) * (side - side2) * (side - side3));
+
+         For the last, calculating the perimeter of the triangle
+          perimeter = side * 2;
+
+Output: The area and the perimeter of the triangle.
+
+
+
+
+
+File: ex1c.cc 
+Calculating the final grade of the course of the form:
+Assignment 1 (targil 1) compounds 10% of the final grade
+Assignment 2 (targil 2) compounds 20% of the final grade
+Exam compounds 70% of the final grade
+========================================
+Writen by: Eliane Dahab, id = 338038839, login = elianech
+
+This program calculates the final grade of the course
+
+Compile: g++ -Wall ex1c.cc –o ex1c
+Run: ex1c
+Input: The grades of the assignments and the exam
+         e.g., 45 78 80 for the sum of all the grades to compound the final grade of the course
+
+         num1 = 45 , num2 = 78 , num3 = 80
+         targil1 = (num1 * 0.1);
+         targil2 = (num2 * 0.2);
+         exam = (num3 * 0.7);
+
+         finalgrade = targil1 + targil2 + exam;
+
+Output: The final grade calculating according to the percentage of the other grades.

@@ -1,0 +1,71 @@
+File: ex5a.cc
+Statistical informations about an array
+========================================
+Writen by: Eliane Dahab
+
+This program identifies from an array which value is the lowest and the highest.
+Calculates as well the average of the array and the variance.
+For last, counts how many values are negative, zero and positive.
+
+The Output shows the following order:
+lowest, highest, average, variance, negative, zero and positive.
+
+Compile: g++ -Wall ex5a.cc –o ex5a
+Run: ex5a
+Input: An array of 6 numbers
+e.g. 0 9 3 -2 -8 -9
+
+        The variance is calculated as follows:((x1-AVG)2+ (x2-AVG)2+…+(xN-AVG)2)/N
+
+Output: -9 9 -1 38.5 3 1 2
+
+File: ex5b.cc
+Identifying in an array the cell that is divided by and divides
+========================================
+Writen by: Eliane Dahab, id = 338038839, login = elianech
+
+This program identifies from an array which cell follows the conditions:
+
+- is divided by the values of the cells before him, without remainder;
+- divides the values of the cells after him, without remainder.
+
+Compile: g++ -Wall ex5b.cc –o ex5b
+Run: ex5b
+Input: An array of 6 numbers
+e.g. 15 20 30 60 120 180
+
+Output: 3 Because is the index of the cell that follows the conditions.
+
+This program first runs on readInput function through all the N cells in the array.
+This means that the program runs N times.
+However, the function findFirstDivisorDivider runs all the N cells in the array.
+So for each cell he runs again with another function.
+Thus, the program runs N _ N-1 _ N-2 _ N-3 _...= N^2, this is N \* N.
+(Calculating the sum of all the actions through arithmetic progression math serie).
+
+File: ex5c.cc
+Drawing an histogram
+========================================
+Writen by: Eliane Dahab, id = 338038839, login = elianech
+
+This program counts from a big array the following topics:
+
+- how many numbers are primes;
+- how many numbers are divided by 2;
+- how many numbers are divided by 3;
+- how many numbers are divided by 4;
+- how many numbers are divided by 5;
+- how many numbers are divided by 6;
+
+The values of the array are random values between a low and higher numbers.
+The functions to create and draw the histogram are part of other programs.
+Thus, in this program we just "call" those functions to print the histogram.
+Each topic mentioned above represents each column of the histogram.
+The array is compound by 200 cells.
+
+Compile: g++ -Wall ex5c.cc –o ex5c
+Run: ex5c
+Input: Low and high numbers
+e.g., 7 562
+
+Output: A histogram
